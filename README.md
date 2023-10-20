@@ -2,3 +2,4 @@
 
 1.  initial setup
 2.  Generate login / registration scaffolding
+3.  Fix User model and generate some users
