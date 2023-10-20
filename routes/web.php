@@ -20,3 +20,9 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/topics', 'TopicController@index');
+Route::get('/topics/{topic}', 'TopicController@show')->name('topics.show');
+
+Route::get('/user/topics', 'UserTopicController@index');
+Route::get('/user/topics/add', 'UserTopicController@store');
