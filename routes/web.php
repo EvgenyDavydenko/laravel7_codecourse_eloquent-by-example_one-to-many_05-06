@@ -26,3 +26,6 @@ Route::get('/topics/{topic}', 'TopicController@show')->name('topics.show');
 
 Route::get('/user/topics', 'UserTopicController@index');
 Route::get('/user/topics/add', 'UserTopicController@store');
+
+Route::get('/user/posts', 'UserPostController@index');
+Route::get('/user/posts/add', 'UserPostController@store');
